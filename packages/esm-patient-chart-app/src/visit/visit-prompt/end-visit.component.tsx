@@ -40,7 +40,7 @@ const EndVisitPrompt: React.FC<EndVisitPromptProps> = ({ patientUuid, openModal,
       (error) => {
         createErrorHandler();
         showToast({
-          kind: 'success',
+          kind: 'error',
           description: t('visitEndError', 'Error ending current visit'),
         });
       },

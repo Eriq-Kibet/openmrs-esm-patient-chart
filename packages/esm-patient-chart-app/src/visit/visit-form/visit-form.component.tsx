@@ -99,8 +99,8 @@ const StartVisitForm: React.FC<StartVisitFormProps> = ({ isTablet, patientUuid }
 
   return (
     <Form>
-      <Grid style={{ margin: 0, padding: '0 1rem' }}>
-        <Row style={{ marginTop: '0.5rem', marginBottom: '2.75rem' }}>
+      <Grid className={styles.grid}>
+        <Row className={styles.gridRow}>
           <Column sm={1}>
             <span className={styles.columnLabel}>{t('dateAndTimeOfVisit', 'Date and time of visit')}</span>
           </Column>
@@ -134,7 +134,7 @@ const StartVisitForm: React.FC<StartVisitFormProps> = ({ isTablet, patientUuid }
             </TimePicker>
           </Column>
         </Row>
-        <Row style={{ marginTop: '0.5rem', marginBottom: '2.75rem' }}>
+        <Row className={styles.gridRow}>
           <Column sm={1}>
             <span className={styles.columnLabel}>{t('visitLocation', 'Visit Location')}</span>
           </Column>
@@ -155,7 +155,7 @@ const StartVisitForm: React.FC<StartVisitFormProps> = ({ isTablet, patientUuid }
             </Select>
           </Column>
         </Row>
-        <Row style={{ marginTop: '0.5rem', marginBottom: '2.75rem' }}>
+        <Row className={styles.gridRow}>
           <Column sm={1}>
             <span className={styles.columnLabel}>{t('visitType', 'Visit Type')}</span>
           </Column>

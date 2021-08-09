@@ -5,7 +5,7 @@ import RadioButton from 'carbon-components-react/es/components/RadioButton';
 import { useTranslation } from 'react-i18next';
 import styles from './visit-type-overview.component.scss';
 import debounce from 'lodash-es/debounce';
-import { useLocations, usePagination, useVisitTypes, VisitType } from '@openmrs/esm-framework';
+import { usePagination, useVisitTypes, VisitType } from '@openmrs/esm-framework';
 import isEmpty from 'lodash-es/isEmpty';
 import { PatientChartPagination } from '../../../../esm-patient-common-lib/src';
 

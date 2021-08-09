@@ -14,8 +14,6 @@ interface StartVisitPromptProps {
 const StartVisitPrompt: React.FC<StartVisitPromptProps> = ({ openModal, closeModal, state }) => {
   const { t } = useTranslation();
 
-  console.log(state);
-
   const modalHeaderText =
     state?.type === 'start' ? t('noActiveVisit', 'No Active Visit') : t('addPastVisit', 'Add Past Visit');
   const modalBodyText =
